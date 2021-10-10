@@ -4,60 +4,63 @@
     <div class="skill-text">
       <!--heading-->
       <div class="skill-heading">
-        <span>My Skills</span>
-        <h2>My Experties</h2>
+        <span class="transition2">My Skills</span>
+        <h2 class="transition2">My Experties</h2>
       </div>
       <!--skill-box-container----------->
       <div class="s-box-container">
         <!--skill-box-------------->
-        <div class="skill-box">
+        <div class="skill-box transition2">
           <!--icon------->
-          <div class="s-box-icon">
-            <font-awesome-icon :icon="['fab', 'html5']" />
+          <div class="s-box-icon" style="color: red">
+            <font-awesome-icon :icon="['fas', 'code']" />
           </div>
           <!--skill-box-text--------->
           <div class="s-box-text">
-            <strong>Python</strong>
+            <strong>Web Developer</strong>
             <p>
-              I have some experience in Augmented Intelegen with Python and i
-              completed some project.
+              Frontend using modern framework such as <b>Vue, Nuxt, React, Bootstrap and Vuetify</b>
+            </p>
+            <p>
+              Backend using modern framework such as <b>Laravel, CodeIgniter and Express</b>
+            </p>
+            <p>
+              Third party API integration such as <b>Stripe, Paypal, Bookey, OAuth Social Media, Twilio, Pusher, Agora, ETC</b>
             </p>
           </div>
         </div>
         <!--skill-box-------------->
-        <div class="skill-box">
+        <div class="skill-box transition2">
           <!--icon------->
-          <div class="s-box-icon">
-            <font-awesome-icon :icon="['fab', 'css3-alt']" />
+          <div class="s-box-icon" style="color: blue">
+            <font-awesome-icon :icon="['fas', 'brain']" />
           </div>
           <!--skill-box-text--------->
           <div class="s-box-text">
-            <strong>PHP</strong>
+            <strong>Artificial Intelligence (AI)</strong>
             <p>
-              I have 1 years experience in PHP Framework such as Laravel and i
-              completed some project.
+              Build AI using <b>Python, Anaconda</b> with <b>Tensorflow Object Detection or YOLO</b>
             </p>
           </div>
         </div>
         <!--skill-box-------------->
-        <div class="skill-box">
+        <div class="skill-box transition2">
           <!--icon------->
-          <div class="s-box-icon">
-            <font-awesome-icon :icon="['fab', 'js-square']" />
+          <div class="s-box-icon" style="color: green">
+            <font-awesome-icon :icon="['fas', 'server']" />
           </div>
           <!--skill-box-text--------->
           <div class="s-box-text">
-            <strong>JavaScript(Js)</strong>
+            <strong>Server</strong>
             <p>
-              I have 3 years experience in JavaScript and i completed 100+ Js
-              project.
+              Maintenance server such as <b>VPS, Shared server</b> and shipping using <b>Container like Docker</b>
             </p>
           </div>
         </div>
       </div>
     </div>
     <!--img--------------->
-    <div class="skill-img">
+    <div class="skill-img transition2">
       <img src="images/skill2.png" />
     </div>
   </section>

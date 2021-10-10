@@ -19,7 +19,7 @@
         <li><nuxt-link to="#contact">Contact</nuxt-link></li>
       </ul>
       <!--say-hey--------->
-      <nuxt-link to="#" class="hey">Say Hi!</nuxt-link>
+      <nuxt-link to="#" class="hey">Hi Recruiter!</nuxt-link>
     </nav>
   </section>
 </template>

@@ -3,15 +3,15 @@
 	<section id="recent">
 	<!--heading--------------->
 	<div class="recent-heading">
-	<span>Recent</span>
-	<h3>Recent Doing Project Design</h3>
+	<span class="transition3">Recent</span>
+	<h3 class="transition3">Recent Doing Project Design</h3>
 	</div>
 	<!--img--------------->
-	<div class="recent-img">
+	<div class="recent-img transition3">
 		<img src="images/recent.png"/>
 	</div>
 	<!--btn----------->
-	<a href="#" class="recent-btn">View Design</a>
+	<a href="#" class="recent-btn transition3">View Design</a>
 	</section>
 
 </template>
