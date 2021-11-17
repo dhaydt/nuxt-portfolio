@@ -7,7 +7,7 @@
     </div>
     <!--text-------------->
     <div class="main-text">
-      <h1 class="stagger1">Hello, I am Dayats</h1>
+      <h1 class="stagger1">Hello, I am Dayat</h1>
       <p class="hero-design">
         I am <b>Fullstack Developer</b> who had Website building from scratch by
         using modern <b>Frameworks</b> such as
