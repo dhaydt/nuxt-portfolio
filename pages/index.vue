@@ -26,7 +26,8 @@ export default {
           src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
         },
         {
-          src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"
+          src:
+            "https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"
         }
       ]
     };
@@ -42,53 +43,64 @@ export default {
 
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
-        var tl = gsap.timeline();
+    var tl = gsap.timeline();
 
-        tl.from('.content', {
-            y: '-30%',
-            opacity: 0,
-            duration: 2,
-            ease: Power4.easeOut
-        })
-        tl.from('.stagger1', {
-            opacity: 0,
-            y: -50,
-            stagger: .3,
-            ease: Power4.easeOut,
-            duration: 2
-        }, "-=1.5")
-        tl.from('.hero-design', {
-            opacity: 0, y: 50, ease: Power4.easeOut, duration: 1
-        }, "-=2")
+    tl.from(".content", {
+      y: "-30%",
+      opacity: 0,
+      duration: 2,
+      ease: Power4.easeOut
+    });
+    tl.from(
+      ".stagger1",
+      {
+        opacity: 0,
+        y: -50,
+        stagger: 0.3,
+        ease: Power4.easeOut,
+        duration: 2
+      },
+      "-=1.5"
+    );
+    tl.from(
+      ".hero-design",
+      {
+        opacity: 0,
+        y: 50,
+        ease: Power4.easeOut,
+        duration: 1
+      },
+      "-=2"
+    );
 
-        gsap.from(".square-anim", {
-            stagger: .2,
-            scale: 0.1,
-            duration: 1,
-            ease: Back.easeOut.config(1.7)
-        })
+    gsap.from(".square-anim", {
+      stagger: 0.2,
+      scale: 0.1,
+      duration: 1,
+      ease: Back.easeOut.config(1.7)
+    });
 
-        gsap.from(".transition2", {
-            scrollTrigger: {
-                trigger: '.transition2',
-                start: "top bottom"
-            },
-            y: 50,
-            opacity: 0,
-            duration: 1.2,
-            stagger: .3
-        })
+    gsap.from(".transition2", {
+      scrollTrigger: {
+        trigger: ".transition2",
+        start: "top bottom"
+      },
+      y: 50,
+      opacity: 0,
+      duration: 1.2,
+      stagger: 0.3
+    });
 
-        gsap.from(".transition3", {
-            scrollTrigger: {
-                trigger: ".transition3",
-                start: "top center"
-            },
-            y: 50,
-            opacity: 0,
-            duration: 1.2,
-            stagger: .6
-        });
+    gsap.from(".transition3", {
+      scrollTrigger: {
+        trigger: ".transition3",
+        start: "top center"
+      },
+      y: 50,
+      opacity: 0,
+      duration: 1.2,
+      stagger: 0.6
+    });
 
     window.addEventListener("scroll", function() {
       var header = this.document.querySelector("nav");
@@ -98,17 +110,25 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Galada&family=Patrick+Hand&display=swap");
+:root {
+  font-size: 20px;
+}
 /* CSS Document */
 body {
   margin: 0px;
   padding: 0px;
-  font-family: poppins;
+  font-family: "Patrick Hand", cursive;
 }
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  line-height: 1.3;
+  p {
+    margin-bottom: 0.5rem;
+  }
 }
 ul {
   list-style: none;
@@ -122,7 +142,7 @@ a {
 
 nav.sticky {
   padding: 10px 50px;
-  background-color: #ffffff;
+  background-color: #ffffffb9;
 }
 nav .menu-btn,
 .menu-icon {

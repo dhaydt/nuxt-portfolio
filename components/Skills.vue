@@ -1,5 +1,5 @@
 <template>
-  <section id="skills">
+  <section id="skills" class="mt-4">
     <!--text--------->
     <div class="skill-text">
       <!--heading-->
@@ -19,13 +19,19 @@
           <div class="s-box-text">
             <strong>Web Developer</strong>
             <p>
-              Frontend using modern framework such as <b>Vue, Nuxt, React, Bootstrap and Vuetify</b>
+              Frontend using modern framework such as
+              <b>Vue, Nuxt, React, Bootstrap and Vuetify</b>
             </p>
             <p>
-              Backend using modern framework such as <b>Laravel, CodeIgniter and Express</b>
+              Backend using modern framework such as
+              <b>Laravel, CodeIgniter and Express</b>
             </p>
             <p>
-              Third party API integration such as <b>Stripe, Paypal, Bookey, OAuth Social Media, Twilio, Pusher, Agora, ETC</b>
+              Third party API integration such as
+              <b
+                >Stripe, Paypal, Bookey, OAuth Social Media, Twilio, Pusher,
+                Agora, ETC</b
+              >
             </p>
           </div>
         </div>
@@ -39,7 +45,8 @@
           <div class="s-box-text">
             <strong>Artificial Intelligence (AI)</strong>
             <p>
-              Build AI using <b>Python, Anaconda</b> with <b>Tensorflow Object Detection or YOLO</b>
+              Build AI using <b>Python, Anaconda</b> with
+              <b>Tensorflow Object Detection or YOLO</b>
             </p>
           </div>
         </div>
@@ -53,7 +60,8 @@
           <div class="s-box-text">
             <strong>Server</strong>
             <p>
-              Maintenance server such as <b>VPS, Shared server</b> and shipping using <b>Container like Docker</b>
+              Maintenance server such as <b>VPS, Shared server</b> and shipping
+              using <b>Container like Docker</b>
             </p>
           </div>
         </div>
@@ -84,11 +92,13 @@ export default {};
 .skill-img {
   width: 600px;
   height: 600px;
+  display: flex;
+  align-items: center;
 }
 .skill-img img {
   width: 100%;
-  height: 100%;
   object-fit: contain;
+  margin-top: 114px;
 }
 .skill-heading span {
   color: #36b7b5;
@@ -99,6 +109,7 @@ export default {};
 }
 .skill-heading h2 {
   color: #1c3548;
+  line-height: 1;
   font-size: 3.3rem;
   margin: 0px;
   font-weight: 400;
@@ -109,7 +120,7 @@ export default {};
 }
 .skill-box {
   display: flex;
-  margin: 25px 0px;
+  margin: 10px 0px;
 }
 .s-box-icon {
   margin-right: 12px;
@@ -133,6 +144,7 @@ export default {};
 .s-box-text p {
   color: #747474;
   font-size: 0.9rem;
+  line-height: 1;
 }
 .fa-html5 {
   color: #e06061;

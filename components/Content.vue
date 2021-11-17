@@ -1,25 +1,31 @@
 <template>
-    <!--content----------------->
-    <div class="content mt-4">
-      <!--model--------------->
-      <div class="model">
-        <img src="images/model.png" />
-      </div>
-      <!--text-------------->
-      <div class="main-text">
-        <h1 class="stagger1">Hello, I am Dayat</h1>
-        <p class="hero-design">
-          I am <b>Fullstack Developer</b> who had Website building from scratch by
-          using modern <b>Frameworks</b> such as <b>Laravel, Node, CodeIgniter, YII,</b> etc as <b>Backend</b>,
-          and have great <b>Frontend development skills</b> such as <b>Vue,
-          Nuxt, React, Jquery, Javascript and so on</b>. I am open to learning
-          new things that can help make a positive contribution to the Client I
-          work for.
-        </p>
-        <!--btn------->
-        <a href="#" class="portfolio-btn square-anim">See My Portfolio</a>
-      </div>
+  <!--content----------------->
+  <div class="content mt-4">
+    <!--model--------------->
+    <div class="model">
+      <img src="images/model.png" />
     </div>
+    <!--text-------------->
+    <div class="main-text">
+      <h1 class="stagger1">Hello, I am Dayat</h1>
+      <p class="hero-design">
+        I am <b>Fullstack Developer</b> who had Website building from scratch by
+        using modern <b>Frameworks</b> such as
+        <b>Laravel, Node, CodeIgniter, YII,</b> etc as <b>Backend</b>, and have
+        great <b>Frontend development skills</b> such as
+        <b>Vue, Nuxt, React, Jquery, Javascript and so on</b>. I am open to
+        learning new things that can help make a positive contribution to the
+        Client I work for.
+      </p>
+      <!--btn------->
+      <a
+        href="document/cv.pdf"
+        target="_blank"
+        class="portfolio-btn square-anim"
+        >See My Portfolio</a
+      >
+    </div>
+  </div>
 </template>
 
 <script>
