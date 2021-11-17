@@ -25,7 +25,24 @@
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        //>=, not <=
+        if (scroll >= 70) {
+          //clearHeader, not clearheader - caps H
+          // var navbar = document.getElementsByTagName("nav");
+          $("nav").addClass("sticked");
+        } else {
+          $("nav").removeClass("sticked");
+        }
+      }); //missing );
+    });
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -39,7 +56,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.02);
-  position: fixed;
+  // position: fixed;
   left: 0;
   transition: 0.6s;
   padding: 20px 0;

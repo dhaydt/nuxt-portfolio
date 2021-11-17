@@ -42,6 +42,11 @@ export default {
   },
 
   mounted() {
+    // window.addEventListener("scroll", function() {
+    //   var header = this.document.querySelector("nav");
+    //   header.classList.toggle("sticked", window.scrollY > 0);
+    // });
+
     gsap.registerPlugin(ScrollTrigger);
     var tl = gsap.timeline();
 
@@ -101,18 +106,12 @@ export default {
       duration: 1.2,
       stagger: 0.6
     });
-
-    window.addEventListener("scroll", function() {
-      var header = this.document.querySelector("nav");
-      header.classList.toggle("sticky", window.scrollY > 0);
-    });
   }
 };
 </script>
 
 <style lang="scss">
 @charset "utf-8";
-@import url("https://fonts.googleapis.com/css2?family=Galada&family=Patrick+Hand&display=swap");
 :root {
   font-size: 20px;
 }
@@ -140,7 +139,7 @@ a {
   background-color: #e6f4f5;
 }
 
-nav.sticky {
+nav.sticked {
   padding: 10px 50px;
   background-color: #ffffffb9;
 }
