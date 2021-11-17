@@ -27,20 +27,19 @@
 <script>
 export default {
   mounted() {
-    $(document).ready(function() {
-      $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-
-        //>=, not <=
-        if (scroll >= 70) {
-          //clearHeader, not clearheader - caps H
-          // var navbar = document.getElementsByTagName("nav");
-          $("nav").addClass("sticked");
-        } else {
-          $("nav").removeClass("sticked");
-        }
-      }); //missing );
-    });
+    // $(document).ready(function() {
+    //   $(window).scroll(function() {
+    //     var scroll = $(window).scrollTop();
+    //     //>=, not <=
+    //     if (scroll >= 70) {
+    //       //clearHeader, not clearheader - caps H
+    //       // var navbar = document.getElementsByTagName("nav");
+    //       $("nav").addClass("sticked");
+    //     } else {
+    //       $("nav").removeClass("sticked");
+    //     }
+    //   }); //missing );
+    // });
   }
 };
 </script>

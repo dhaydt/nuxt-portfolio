@@ -42,10 +42,10 @@ export default {
   },
 
   mounted() {
-    // window.addEventListener("scroll", function() {
-    //   var header = this.document.querySelector("nav");
-    //   header.classList.toggle("sticked", window.scrollY > 0);
-    // });
+    window.addEventListener("scroll", function() {
+      var header = this.document.querySelector("nav");
+      header.classList.toggle("sticked", window.scrollY > 0);
+    });
 
     gsap.registerPlugin(ScrollTrigger);
     var tl = gsap.timeline();
